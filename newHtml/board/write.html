@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/newCss/index.css">
+    <link rel="stylesheet" href="/newCss/reset.css">
+    <link rel="stylesheet" href="/newCss/myLog.css">
+    <link rel="stylesheet" href="/newCss/common.css">
+    <link rel="stylesheet" href="/newCss/write.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrossIt</title>
+</head>
+<body>
+
+<!--컨테이너 영역-->
+<div class="container">
+
+  <th:block layout:fragment="content">
+
+    <!--헤더 영역-->
+      <header class="navbar">
+                  
+          <div class="nav-start">
+              <a class="navbar-item" href="">
+                  <img src="/img/title.png" width="112" height="30" >
+                </a>
+
+
+                <a class="navbar-item">
+                  My Log      
+                </a>
+
+                <a class="navbar-item">
+                  Project   
+                </a>
+
+                <a class="navbar-item">
+                  Dashboard 
+                </a>
+          </div>
+
+
+          <div class="nav-end">
+                  <div class="nav-buttons">
+                      <a class="btn-normal">
+                          <Strong>Sign up</Strong>
+                      </a>
+
+                      <a class="btn-gray">
+                          <Strong>Log in</Strong>
+                      </a>
+                  </div>
+          </div>
+
+      </header>
+    <!--헤더 영역 /-->
+
+    <div class="category-content">
+        <form>
+          <div class="category">
+    
+            <div class="category-seclect">
+              <label>카테고리</label>
+            </div>
+           
+            <div class="dropdown">
+              <select class="dropbtn">
+                <option value="1">자랑하기</option>
+                <option value="2">Today I learn</option>
+                <option value="3">프로젝트 같이해요</option>
+                <option value="4">기타</option>
+              </select>
+            </div> 
+         
+          </div>
+    
+          <div>
+            <label>제목</label>
+            <div class="write-text">
+              <input/>
+            </div>
+          </div>
+    
+    
+          <div>
+            <label>내용</label>
+            <div class="write-text">
+              <textarea class="write-contents" textarea placeholder="내용을 입력해 주세요." cols="80"></textarea>
+            </div>
+          </div>
+
+
+          <!--/* 저장된 파일이 없는 파일 영역 */-->
+          <div data-name="fileDiv">
+            <label>첨부파일</label>
+            <div>
+              <input type="text" value="파일 찾기" readonly/>
+              <label>찾아보기</label>
+              <input type="file" name="files" id="file_0"/>
+    
+              <button type="button" onclick="addFile()">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+              <button type="button" onclick="removeFile(this)">
+                <i class="fa fa-minus" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+    
+          <!--/* 저장된 파일이 있는 파일 영역 */-->
+          <div data-name="fileDiv">
+            <label></label>
+            <div>
+              <input type="hidden" name="fileIdxs"/>
+              <input type="text" class="upload-name" readonly/>
+              <label class="control-label">찾아보기</label>
+              <input type="file" name="files" onchange="changeFilename(this)"/>
+    
+              <button class="wrBtn" type="button" onclick="addFile()">
+                <img class="write-icon"  src="/img/plus.svg"></i>
+              </button>
+              <button class="wrBtn2" type="button" onclick="removeFile(this)">
+                <img class="write-icon"  src="/img/minus.svg"></i>
+              </button>
+            </div>
+          </div>
+    
+          <div id="btnDiv">
+
+            <button class="back-btn" type="submit">
+              <img class="write-contents-icon" src="/img/back.svg"></i>
+                뒤로가기
+            </button>
+            
+            <button class="save" type="submit">
+              <img class="write-contents-icon" src="/img/write_contents.svg"></i>
+                저장하기
+            </button>
+          </div>
+
+        </form>
+      </div>
+      <!-- /.card-content -->
+
+
+
+</th:block>
+</div>
+<!--컨테이너 영역 /-->
+
+
+</body>
+</html>

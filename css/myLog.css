@@ -33,7 +33,7 @@ body{
 }
 
 .user-profile .i {
-    margin-left: 1p;
+    margin-left: 1px;
    
 }
 
@@ -82,3 +82,9 @@ width: 100%;
 .inputSt{
     border: 0;
 }
+
+.card-list-con{
+    width: 90%;
+   
+}
+

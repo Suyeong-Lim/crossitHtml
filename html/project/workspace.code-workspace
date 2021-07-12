@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../javaScript_Study/JSFileStudy"
+		},
+		{
+			"path": "../../../../notepubs-html"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "notepubs-html"
+	}
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrossIt</title>
+</head>
+<body>
+
+    <div class="container">
+        
+    <!--헤더 영역-->
+        <header class="navbar">
+            
+            <div class="nav-start">
+                <a class="navbar-item" href="">
+                    <img src="/img/title.png" width="112" height="30" >
+                  </a>
+    
+    
+                  <a class="navbar-item">
+                    My Log      
+                  </a>
+    
+                  <a class="navbar-item">
+                    Project   
+                  </a>
+    
+                  <a class="navbar-item">
+                    Dashboard 
+                  </a>
+            </div>
+
+
+            <div class="nav-end">
+                    <div class="nav-buttons">
+                        <a class="btn-normal">
+                            <Strong>Sign up</Strong>
+                        </a>
+
+                        <a class="btn-gray">
+                            <Strong>Log in</Strong>
+                        </a>
+                    </div>
+            </div>
+
+        </header>
+
+    <!--헤더 영역 /-->
+
+
+    <!-- 중간 이미지영역 -->
+        <section class="index-img">
+
+            <img class="jumbo" src="/img/text2.svg">
+            <img class="jumbo" src="/img/7 SCENE.svg">
+        </section>
+
+    <!-- 중간 이미지영역 /-->
+
+    <!-- 콘텐츠 영역 -->
+
+        <section class="contents">
+             <!-- 카테고리 영역 -->
+            <div class="category">
+                <div class="dropdown">
+                    <button class="dropbtn"> 전체글 보기 
+                        <img class="mini-icon" src="/img/a.svg"></i>
+                    </button>
+
+                    <div class="dropdown-content">
+                      <a href="#">개발자</a>
+                      <a href="#">디자이너</a>
+                      <a href="#">기획자</a>
+                      <a href="#">기타</a>
+                    </div>
+                  </div> 
+
+                  <div class="tabs">
+                    <ul>
+                      <li class="is-active"><input class="tabs-btn-index"type="button" onclick="getBoardByCategory(0)" value="자랑하기"></li>
+                      <li> <input type="button" class="tabs-btn-index" onclick="getBoardByCategory(1)" value="Today I learn">
+                      </li>
+                      <li> <input type="button" class="tabs-btn-index" onclick="getBoardByCategory(2)" value="프로젝트 같이해요" ></li>
+                      <li> <input type="button" class="tabs-btn-index" onclick="getBoardByCategory(3)" value="기타" ></li>
+                    </ul>
+                  </div>
+            </div>
+            <!-- 카테고리 영역 /-->
+
+            <!--글 영역 -->
+            <ul class="card-list">
+                <li class="card-item">
+                    <figure class="card-image">
+                        <img src="../img/index.png" alt="글 이미지">
+                    </figure>
+    
+                    <div class="card-desc">
+                        <div class="media-content">
+                            <p class="title ">Lorem ipsum</p>
+                            <div class="content ">
+                                Lorem ipsum dolor sit amet consectetur adipisicing. 
+                                Lorem ipsum dolor sit amet consectetur adipisicing. 
+                                Lorem ipsum dolor sit amet consectetur adipisicing. 
+                                <p class="content date">2021년 6월 26일</p>
+                                <hr class="line">
+                            </div>
+                            <div class="writer"> 
+                            <figure class="profile-image">
+                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                              </figure>
+                            <p class="nickname">John Smith</p>
+                            </div>
+                          </div>
+                    </div>
+                </li>
+
+            </ul>
+            <!--글 영역 / -->
+
+        </section>
+
+     <!-- 콘텐츠 영역 /-->
+
+    
+
+    </div>
+</body>
+</html>

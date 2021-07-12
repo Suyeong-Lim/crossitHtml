@@ -1,0 +1,44 @@
+.mynavbar{
+    background-color: #1b60ce38;
+    min-width: 5em;
+    max-height: 4em;
+    display: block;
+    margin-bottom: 1em;
+    display: flex;
+    margin-top: 1em;
+}
+
+.mynavbar div ul li {
+    margin-right: 20px;
+}
+
+
+.nav-tabs{
+    align-items: stretch;
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-tabs a:hover{
+    border-bottom-color: #363636;
+    color: #363636;
+
+}
+
+a.navbar-item:hover{
+    background-color: #fafafa;
+}
+
+.navbar-items{
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+}
+
+.card-container{
+    margin: 3em;
+   
+}
